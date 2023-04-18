@@ -174,7 +174,7 @@ button{
 /* Experiencia */
 .gridexp{
     display: grid;
-    grid-template-columns: repeat(3,350px);
+    grid-template-columns: repeat(3,1fr);
     grid-gap: 10px;
     justify-content: space-between;
     align-content: space-around;
@@ -194,6 +194,7 @@ button{
     background-color: #172026;
     border-radius: 15px;
     color: white;
+    width: 310px;
     padding: 10px 15px;
 }
 .cardexp h2{
@@ -215,6 +216,26 @@ button{
 #experiencia{
     background-color: #5FCDD9;
     color: #172026;
+}
+
+/* Estudios */
+#estudios{
+    background-color: #04BFAD;
+    border-bottom: 2px solid #172026;
+    color: #172026;
+    text-align: center;
+}
+#estudios div{
+    margin-bottom: 20px;
+}
+.titulos{
+    font-size: 25px;
+    text-align: justify;
+    margin-bottom: 10px;
+}
+#estudios div p{
+    font-size: 15px;
+    font-weight: 400;
 }
 
 /* Formulario */
