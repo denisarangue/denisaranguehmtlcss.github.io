@@ -11,6 +11,8 @@
     <script src="https://kit.fontawesome.com/5cde8da449.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="icon" type="image/png" href="/imagenes/favicon.ico"/>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="/js/main.js"></script>
 </head>
 <body>
     <!-- Menu de navegación -->
@@ -29,6 +31,8 @@
             <h2>Denis Arangue</h2>
             <h3 class="hastag">#Desarrollo Web</h3>
             <h3 class="hastag">#Ciberseguridad</h3>
+            <h3 class="hastag">#Informática</h3>
+            <h3 class="hastag">#Edición</h3>
             <ul id="redessociales">
                 <li><a href="https://www.linkedin.com/in/denis-arangue/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
                 <li><a href="https://twitter.com/ArangueDenis" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
@@ -46,8 +50,8 @@
                 <br>
                 <p>hola! Soy <strong>Denis Arangue</strong>. Bienvenido/a a mi página personal. Permíteme presentarme.</p>
                 <br>
-                <p>Me defino como una persona ordenada y creativa, responsable y que ama lo que hace, donde mi máxima es <cite>"todo es posible en la medida que tú creas que es posible"</cite> .</p>
-                <p>He desarrollado habilidades tanto en desarrollo web, como en ciberseguridad, dos pasiones que vienen de la mano, como lo es la web y el hacking.</p>
+                <p>Me defino como una persona ordenada, creativa, responsable y que ama lo que hace, donde mi máxima es <cite>"todo es posible en la medida que tú creas que es posible"</cite> .</p>
+                <p>He desarrollado habilidades en desarrollo web, ciberseguridad e informática, tres pasiones que vienen de la mano.</p>
                 <br>
                 <p>En mi página, encontrarás información sobre mis proyectos, herramientas y estudios realizados. Además de mi especialidades, me encanta escuchar música, tocar la guitarra y ver películas, entre otros.</p>
                 <br>
@@ -67,21 +71,21 @@
                     <h3>Portfolio Luíz Martínez</h3>
                     <h4>Diseño portfolio</h4>
                     <div class="sep"></div>
-                    <p>Página web del cliente Luíz Martínez.</p>
+                    <p>Página web del cliente Luíz Martínez. Proyecto del curso "Crea páginas web con HTML Y CSS</p>
                     <div class="masinfo"><button type="button"><a href="https://codepen.io/denisarangue/pen/ZEqOGEe" target="_blank">MÁS INFO</a></button></div>
                 </div>
                 <div class="card">
-                    <img src="/imagenes/portfolio.jpeg" alt="">
-                    <h3>Portfolio Denis Arangue</h3>
-                    <h4>Diseño portfolio</h4>
+                    <img src="/imagenes/portfolio.jpeg" alt="Masterdots Game">
+                    <h3>Masterdots Game</h3>
+                    <h4>Diseño de juego</h4>
                     <div class="sep"></div>
                     <p>Página web propia diseñado para usar de portfolio.</p>
                     <div class="masinfo"><button type="button">MÁS INFO</button></div>
                 </div>
                 <div class="card">
-                    <img src="./imagenes/portfolio.jpeg" alt="Portfolio 3">
-                    <h3>Página 3</h3>
-                    <h4>Diseño web</h4>
+                    <img src="./imagenes/portfolio.jpeg" alt="Conversor de monedas">
+                    <h3>Conversor de monedas</h3>
+                    <h4>Diseño de conversión de divisas</h4>
                     <div class="sep"></div>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
                     <div class="masinfo"><button type="button">MÁS INFO</button></div>
@@ -101,16 +105,17 @@
         <section id="experiencia">
             <h2>Experiencia & Skills</h2>
             <br>
-            <h3>Aquí adjunto las herramientas y skills que domino, como también, de las que tengo conocimiento.</h3>
+            <h3>La única forma de hacer un gran trabajo es amar lo que haces</h3>
             <div class="gridexp">
                 <div class="cardexp">
                     <h2>Desarrollo Web</h2>
                     <br>
-                    <p><i class="fa-brands fa-github"></i> GitHub</p>
+                    <p><i class="fa-brands fa-github"></i> GitHub </p>
                     <p><i class="fa-brands fa-html5"></i> HTML</p>
                     <p><i class="fa-brands fa-css3-alt"></i> CSS</p>
                     <p><i class="fa-brands fa-square-js"></i> JavaScript</p>
                     <p><i class="fa-brands fa-node-js"></i> Node.js</p>
+                    <!-- <p><i class="fa-brands fa-vuejs"></i> Vue</p> -->
                     <!-- <p><i class="fa-brands fa-python"></i> Python</p> -->
                     <!-- <p><i class="fa-brands fa-php"></i> PHP / Apache / MySQL</p> -->
                     <!-- <p><i class="fa-brands fa-java"></i> Java</p> -->
@@ -127,8 +132,10 @@
                 <div class="cardexp">
                     <h2>Informática</h2>
                     <br>
-                    <!-- <p><i class="fa-brands fa-linux"></i> Linux</p> -->
+                    <p><i class="fa-solid fa-computer"></i> Montaje PC</p>
                     <p><i class="fa-sharp fa-solid fa-broom"></i> Optimización PC</p>
+                    <p><i class="fa-brands fa-linux"></i> Linux (Ubuntu/Kali Linux/Arch)</p>
+                    <p><i class="fa-brands fa-git-alt"></i> Git</p>
                 </div>
             </div>
         </section>
@@ -138,11 +145,13 @@
                 <div>
                 <h2>Estudios</h2>
                 <br>
+                <h3>Aprender es un proceso constante o no es nada</h3>
+                <br>
                 <div>
                     <h2 class="titulos">Desarrollo Web</h2>
                     <p><a href="imagenes/Certificado Qué lenguaje de programación aprender.pdf" target="_blank">¿Qué lenguaje de programación aprender? - Mastermind 2023</a></p>
-                    <p><a href="imagenes/Certificado Git de Noob a Pro.pdf" target="_blank">GitHub: de Noob a Pro - Mastermind 2023</a></p>
                     <p><a href="imagenes/Certificado Domina los procesos de selección Tech.pdf" target="_blank">Domina los procesos de selección Tech - Mastermind 2023</a></p>
+                    <p><a href="imagenes/Certificado Git de Noob a Pro.pdf" target="_blank">GitHub: de Noob a Pro - Mastermind 2023</a></p>
                     <p><a href="imagenes/Certificado Crea páginas web con HTML y CSS.pdf" target="_blank">Crea páginas web con HTML y CSS - Mastermind 2023</a></p>
                     <p><a href="imagenes/Certificado Fundamentos de Programación con Node.js.pdf" target="_blank">Fundamentos de Programación con Node.js - Mastermind 2023</a></p>
                 </div>
@@ -155,7 +164,15 @@
                 </div>
                 <div>
                     <h2 class="titulos">Informática</h2>
-                    <p><a href="/imagenes/Certificado ¡Exprime tu PC al máximo! Curso completo de optimización de PC.pdf" target="_blank">¡Exprime tu PC al máximo! Curso completo de optimización de PC - Mastermind 2023</a></p>
+                    <p><a href="" target="_blank">La Biblia del Montaje PC - Mastermind 2023</a></p>
+                    <p><a href="/imagenes/Certificado ¡Exprime tu PC al máximo! Curso completo de optimización de PC.pdf" target="_blank">Curso completo de optimización de PC - Mastermind 2023</a></p>
+                    <p><a href="/imagenes/Certificado Cómo hacer un Low Spec.pdf" target="_blank">Cómo hacer un Low Spec - Mastermind 2023</a></p>
+                    <p><a href="/imagenes/Certificado La Biblia del Mantenimiento PC.pdf" target="_blank">La Biblia del mantenimiento PC - Mastermind 2023</a></p>
+                    <!-- <p><a href="" target="_blank">Linux de Noob a Pro - Mastermind 2023</a></p> -->
+                </div>
+                <div>
+                    <h2 class="titulos">Edición</h2>
+                    <p><a href="" target="_blank">Fotografía - Tumirada Taller de Fotografía 2013</a></p>
                 </div> 
             </div>
         </section>
@@ -164,7 +181,7 @@
         <section id="contactar">
             <h2>Contacto</h2>
                 <h3>Envíame tus dudas</h3>
-                <form action="#">
+                <form action="#" onsubmit="enviarCorreo(); return false;">
                     <div class="itemform">
                         <label for="nombre">Nombre</label>
                         <input type="text" id="nombre" name="nombre" minlength="2" maxlength="64" size="32" required>

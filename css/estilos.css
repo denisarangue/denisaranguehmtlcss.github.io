@@ -145,6 +145,8 @@ button{
     border-radius: 15px;
 }
 .card img,.card video,.card iframe{
+    width: 250px;
+    height: auto;
     border-radius: 15px 15px 0 0;
 }
 .card h3{
