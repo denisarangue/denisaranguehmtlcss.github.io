@@ -139,15 +139,33 @@ button{
 
 /*Portfolio*/
 .filaportfolio{
+    white-space: nowrap; /* Evita que los elementos se salten de línea */
+    overflow-x: scroll; /* Permite el desplazamiento horizontal */
+    width: 100%; /* Ancho del contenedor */
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-between;
     gap: 30px 30px;
     margin-bottom: 15px;
     margin-top: 15px;
 }
+.filaportfolio::-webkit-scrollbar {
+    width: 20px; /* Ancho de la barra de desplazamiento */
+  }
+  
+.filaportfolio::-webkit-scrollbar-thumb {
+    background-color: #62E1E9; /* Color del pulgar de la barra de desplazamiento */
+    border: solid #172026 1px;
+    border-radius: 5px;
+  }
+  
+.filaportfolio::-webkit-scrollbar-track {
+    background-color: #E0E0E0; /* Color de fondo de la barra de desplazamiento */
+    border-radius: 5px;
+  }
 .card{
+    display: inline-block; /* Mantiene los elementos en una línea horizontal */
+    margin-right: 10px; /* Espacio entre las cards */
     width: 250px;
     background-color: #1d2931;
     border-radius: 15px;
@@ -162,6 +180,8 @@ button{
 }
 .card h4{
     margin:0 5px 5px 0;
+    overflow: hidden;
+    white-space: normal;
 }
 .card h3,.card h4,.card p,.card .masinfo{
     padding: 0 15px;
@@ -248,31 +268,40 @@ button{
 }
 
 /* Formulario */
-.itemform{
-    display: grid;
-    grid-template-columns: 150px 350px;
-    justify-content: center;
-    margin-bottom: 10px;
+#contactar {
+    background-color: #027373;
+    color: #172026;
+    height: 250px;
+    text-align: justify;
 }
-.itemform label{
-    font-weight: 700;
-}
-.itemform input, .itemform textarea{
-    border-radius: 5px;
-    border: 1px solid #172026;
-}
-input[type="submit"]{
-    background-color: #172026;
-    border: 1px solid #172026;
-    color: #BFBFBF;
-    padding: 10px;
-    grid-column: 2/3;
-    justify-self: end;
-}
-#contactar{
-    background-color: #04BF9D;
+#contactar h3{
     color: #172026;
 }
+.contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.column {
+    margin: 10px;
+}
+.contact-item {
+    display: flex;
+    align-items: center;
+}
+.contact-item i {
+    margin-right: 10px;
+}
+.contact-item a {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s ease;
+}
+.contact-item a:hover {
+    color: #62E1E9;
+}
+  
+  
 
 /* Footer */
 footer{
@@ -286,5 +315,6 @@ footer ul{
 footer ul li{
     float:left;
 }
+
 
   
