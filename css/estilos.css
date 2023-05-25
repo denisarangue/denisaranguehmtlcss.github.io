@@ -140,7 +140,6 @@ button{
 /*Portfolio*/
 .filaportfolio{
     white-space: nowrap; /* Evita que los elementos se salten de línea */
-    overflow-x: scroll; /* Permite el desplazamiento horizontal */
     width: 100%; /* Ancho del contenedor */
     display: flex;
     flex-direction: row;
@@ -149,20 +148,28 @@ button{
     margin-bottom: 15px;
     margin-top: 15px;
 }
-.filaportfolio::-webkit-scrollbar {
+.contenedor-filaportfolio {
+    overflow-x: scroll; /* Permite el desplazamiento horizontal */
+    margin-top: 30px; /* Ajusta la separación hacia abajo */
+  }
+.contenedor-filaportfolio::-webkit-scrollbar {
     width: 20px; /* Ancho de la barra de desplazamiento */
   }
   
-.filaportfolio::-webkit-scrollbar-thumb {
+.contenedor-filaportfolio::-webkit-scrollbar-thumb {
     background-color: #62E1E9; /* Color del pulgar de la barra de desplazamiento */
     border: solid #172026 1px;
     border-radius: 5px;
   }
   
-.filaportfolio::-webkit-scrollbar-track {
+.contenedor-filaportfolio::-webkit-scrollbar-track {
     background-color: #E0E0E0; /* Color de fondo de la barra de desplazamiento */
     border-radius: 5px;
   }
+.contenedor-scroll {
+    margin-bottom: 30px; /* Ajusta la separación hacia abajo */
+  }
+  
 .card{
     display: inline-block; /* Mantiene los elementos en una línea horizontal */
     margin-right: 10px; /* Espacio entre las cards */
