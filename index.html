@@ -5,10 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Denis Arangue</title>
+    <!-- Fuentes de Google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300&display=swap" rel="stylesheet">
+    <!-- Estilos de los íconos de fontawesome -->
     <script src="https://kit.fontawesome.com/5cde8da449.js" crossorigin="anonymous"></script>
+    <!-- Estilos de Fancybox -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" />
+    <!-- Botón para el cierre de los certificados -->
+    <style>
+        .fancybox-button--close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 30px;
+            height: 30px;
+            background-color: #62E1E9;
+            color: #172026;
+            border-radius: 50%;
+            font-size: 18px;
+            text-align: center;
+            line-height: 30px;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            }
+    </style>
+     <!-- CSS General -->
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="icon" type="image/png" href="/imagenes/logo2.png"
 </head>
@@ -53,7 +78,7 @@
                 <p>En mi página, encontrarás información sobre mis proyectos, herramientas y estudios realizados. Además de mi especialidades, me encanta escuchar música, tocar la guitarra, ver películas y salir a caminar, entre otros.</p>
                 <br>
                 <p>Gracias por visitar mi página. Si tienes alguna pregunta, no dudes en ponerte en contacto conmigo. Adjunto mi curriculum vitae a continuación.</p>
-                <div class="masinfo"><button type="button"><a href="/imagenes/CV Denis Arangue.pdf" target="_blank">CV</a></button></div>
+                <div class="masinfo"><button type="button"><a href="/imagenes/CV Denis Arangue.pdf" data-fancybox="gallery" data-modal="true">CV</a></button></div>
             </div>
         </section>
         <!-- Fin de bloque sobre mi -->
@@ -87,14 +112,22 @@
                     <div class="masinfo"><button type="button"><a href="https://proyectofinalhtmlcss.vercel.app/" target="_blank">MÁS INFO</a></button></div>
                     <br>
                 </div>
-                <!-- <div class="card">
+                <div class="card">
                     <img src="./imagenes/portfolio.jpeg" alt="proyecto4">
                     <h3>Página 4</h3>
                     <div class="sep"></div>
                     <h4>Diseño web</h4>
                     <div class="masinfo"><button type="button">MÁS INFO</button></div>
                     <br>
-                </div> -->
+                </div>
+                <div class="card">
+                    <img src="./imagenes/portfolio.jpeg" alt="proyecto4">
+                    <h3>Página 4</h3>
+                    <div class="sep"></div>
+                    <h4>Diseño web</h4>
+                    <div class="masinfo"><button type="button">MÁS INFO</button></div>
+                    <br>
+                </div>
             </div>
         </section>
         <!-- Fin bloque Portfolio -->
@@ -144,49 +177,49 @@
         <!-- Fin bloque Experiencia -->
         <!-- Bloque Estudios -->
         <section id="estudios">
-                <div>
+            <div>
                 <h2>Estudios</h2>
                 <br>
                 <h3>Aprender es un proceso constante o no es nada</h3>
                 <br>
                 <div>
                     <h2 class="titulos" id="desarrolloWeb">Desarrollo Web</h2>
-                    <p><a href="imagenes/Certificado Qué lenguaje de programación aprender.pdf" target="_blank">¿Qué lenguaje de programación aprender? - Mastermind 2023</a></p>
-                    <p><a href="imagenes/Certificado Domina los procesos de selección Tech.pdf" target="_blank">Domina los procesos de selección Tech - Mastermind 2023</a></p>
-                    <p><a href="">Visual Studio Code: Mejora tu velocidad para codificar - Udemy 2023</a></p>
-                    <p><a href="imagenes/Certificado Git de Noob a Pro.pdf" target="_blank">GitHub: de Noob a Pro - Mastermind 2023</a></p>
-                    <p><a href="imagenes/Certificado Crea páginas web con HTML y CSS.pdf" target="_blank">Crea páginas web con HTML y CSS - Mastermind 2023</a></p>
-                    <!-- <p><a href="" target="_blank">Frontend con HTML, CSS y JS - Mastermind 2023</a></p> -->
-                    <!-- <p><a href="" target="_blank">Fundamentos de TypeScript - Mastermind 2023</a></p> -->
-                    <p><a href="imagenes/Certificado Fundamentos de Programación con Node.js.pdf" target="_blank">Fundamentos de Programación con Node.js - Mastermind 2023</a></p>
-                    <p><a href="/imagenes/Certificado Introducción a API REST.png" target="_blank">Introducción a API REST - EDteam 2023</a></p>
-                    <p><a href="imagenes/Certificado Creando una API con Node.js.pdf" target="_blank">Creando una API con Node.js - Mastermind 2023</a></p>
-                    <!-- <p><a href="" target="_blank">Introducción a Frameworks de Frontend con Vue 3 - Mastermind 2023</a></p> -->
-                    <p><a href="imagenes/Certificado Bases de datos NoSQL con MongoDB y Node.js.pdf" target="_blank">Bases de datos NoSQL con MongoDB y Node.js - Mastermind 2023</a></p>
-                    <!-- <p><a href="">Crud MERN Stack - Udemy 2023</a></p> -->
-                    <!-- <p><a href="" target="_blank">Código Limpio del siglo XXI (Clean Code) - Mastermind 2023</a></p> -->
+                    <p><a href="imagenes/Certificado Qué lenguaje de programación aprender-1.png" data-fancybox="gallery" data-modal="true">¿Qué lenguaje de programación aprender? - Mastermind 2023</a></p>
+                    <p><a href="imagenes/Certificado Domina los procesos de selección Tech.png" data-fancybox="gallery" data-modal="true">Domina los procesos de selección Tech - Mastermind 2023</a></p>
+                    <p><a>Visual Studio Code: Mejora tu velocidad para codificar - Udemy 2023</a></p>
+                    <p><a href="imagenes/Certificado Git de Noob a Pro.png" data-fancybox="gallery" data-modal="true">GitHub: de Noob a Pro - Mastermind 2023</a></p>
+                    <p><a href="imagenes/Certificado Crea páginas web con HTML y CSS.png" data-fancybox="gallery" data-modal="true">Crea páginas web con HTML y CSS - Mastermind 2023</a></p>
+                    <!-- <p><a href="" data-fancybox="gallery" data-modal="true"">Frontend con HTML, CSS y JS - Mastermind 2023</a></p> -->
+                    <!-- <p><a href="" data-fancybox="gallery" data-modal="true">Fundamentos de TypeScript - Mastermind 2023</a></p> -->
+                    <p><a href="imagenes/Certificado Fundamentos de Programación con Node.js.png" data-fancybox="gallery" data-modal="true">Fundamentos de Programación con Node.js - Mastermind 2023</a></p>
+                    <p><a href="imagenes/Certificado Introducción a API REST.png" data-fancybox="gallery" data-modal="true">Introducción a API REST - EDteam 2023</a></p>
+                    <p><a href="imagenes/Certificado Creando una API con Node.js.png" data-fancybox="gallery" data-modal="true">Creando una API con Node.js - Mastermind 2023</a></p>
+                    <!-- <p><a href="" data-fancybox="gallery" data-modal="true">Introducción a Frameworks de Frontend con Vue 3 - Mastermind 2023</a></p> -->
+                    <p><a href="imagenes/Certificado Bases de datos NoSQL con MongoDB y Node.js.png" data-fancybox="gallery" data-modal="true">Bases de datos NoSQL con MongoDB y Node.js - Mastermind 2023</a></p>
+                    <p><a>Crud MERN Stack - Udemy 2023</a></p>
+                    <!-- <p><a href="" data-fancybox="gallery" data-modal="true">Código Limpio del siglo XXI (Clean Code) - Mastermind 2023</a></p> -->
                 </div>
                 <div>
                     <h2 class="titulos" id="ciberseguridad">Ciberseguridad</h2>
-                    <p><a href="imagenes/Certificado Cómo protegerse en la red.pdf" target="_blank">Cómo protegerse en la red - Mastermind 2023</a></p>
-                    <p><a href="imagenes/Certificado Introducción a técnicas OSINT.pdf" target="_blank">Introducción a técnicas OSINT - Mastermind 2023</a></p>
-                    <p><a href="imagenes/Certificado Introducción a la Ingeniería Social.pdf" target="_blank">Introducción a Ingeniería Social - Mastermind 2023</a></p>
-                    <!-- <p><a href="" target="_blank">Hacking y fortificación web - Mastermind 2023</a></p> -->
-                    <!-- <p><a href="" target="_blank">Introducción al Hacking Ético - Mastermind 2023</a></p> -->
-                    <!-- <p><a href="" target="_blank">Hacking de Redes Inalámbricas (WIFI) - Mastermind 2023</a></p> -->
-                    <!-- <p><a href="" target="_blank">Hacking de Radiofrecuencia - Mastermind 2023</a></p> -->
+                    <p><a href="imagenes/Certificado Cómo protegerse en la red.png" data-fancybox="gallery" data-modal="true">Cómo protegerse en la red - Mastermind 2023</a></p>
+                    <p><a href="imagenes/Certificado Introducción a técnicas OSINT.png" data-fancybox="gallery" data-modal="true">Introducción a técnicas OSINT - Mastermind 2023</a></p>
+                    <p><a href="imagenes/Certificado Introducción a la Ingeniería Social.png" data-fancybox="gallery" data-modal="true">Introducción a Ingeniería Social - Mastermind 2023</a></p>
+                    <!-- <p><a href="" data-fancybox="gallery" data-modal="true">Hacking y fortificación web - Mastermind 2023</a></p> -->
+                    <!-- <p><a href="" data-fancybox="gallery" data-modal="true">Introducción al Hacking Ético - Mastermind 2023</a></p> -->
+                    <!-- <p><a href="" data-fancybox="gallery" data-modal="true">Hacking de Redes Inalámbricas (WIFI) - Mastermind 2023</a></p> -->
+                    <!-- <p><a href="" data-fancybox="gallery" data-modal="true">Hacking de Radiofrecuencia - Mastermind 2023</a></p> -->
                 </div>
                 <div>
                     <h2 class="titulos" id="informatica">Informática</h2>
-                    <p><a href="/imagenes/Certificado La Biblia del Montaje de PC.pdf" target="_blank">La Biblia del Montaje PC - Mastermind 2023</a></p>
-                    <p><a href="/imagenes/Certificado ¡Exprime tu PC al máximo! Curso completo de optimización de PC.pdf" target="_blank">Curso completo de optimización de PC - Mastermind 2023</a></p>
-                    <p><a href="/imagenes/Certificado Cómo hacer un Low Spec.pdf" target="_blank">Cómo hacer un Low Spec - Mastermind 2023</a></p>
-                    <p><a href="/imagenes/Certificado La Biblia del Mantenimiento PC.pdf" target="_blank">La Biblia del mantenimiento PC - Mastermind 2023</a></p>
-                    <p><a href="/imagenes/Certificado Linux de Noob a Pro en 9 horas.pdf" target="_blank">Linux de Noob a Pro - Mastermind 2023</a></p>
+                    <p><a href="imagenes/Certificado La Biblia del Montaje de PC.png" data-fancybox="gallery" data-modal="true">La Biblia del Montaje PC - Mastermind 2023</a></p>
+                    <p><a href="imagenes/Certificado ¡Exprime tu PC al máximo! Curso completo de optimización de PC.png" data-fancybox="gallery" data-modal="true">Curso completo de optimización de PC - Mastermind 2023</a></p>
+                    <p><a href="imagenes/Certificado Cómo hacer un Low Spec.png" data-fancybox="gallery" data-modal="true">Cómo hacer un Low Spec - Mastermind 2023</a></p>
+                    <p><a href="imagenes/Certificado La Biblia del Mantenimiento PC.png" data-fancybox="gallery" data-modal="true">La Biblia del mantenimiento PC - Mastermind 2023</a></p>
+                    <p><a href="imagenes/Certificado Linux de Noob a Pro en 9 horas.png" data-fancybox="gallery" data-modal="true">Linux de Noob a Pro - Mastermind 2023</a></p>
                 </div>
                 <!-- <div>
                     <h2 class="titulos">Edición</h2>
-                    <p><a href="" target="_blank">Fotografía - Tumirada Taller de Fotografía 2013</a></p>
+                    <p><a href="" data-fancybox="gallery" data-modal="true">Fotografía - Tumirada Taller de Fotografía 2013</a></p>
                 </div>  -->
             </div>
         </section>
@@ -231,5 +264,9 @@
             <li>Copyright &copy; 2023 Denis Arangue, todos los derechos reservados.</li>
         </ul>
     </footer>
+    <!-- JavaScript para los certificados -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <script src="js/fancybox.js"></script>
 </body>
 </html>
